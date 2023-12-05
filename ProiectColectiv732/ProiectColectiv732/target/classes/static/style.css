@@ -1,0 +1,126 @@
+body {
+    font-family: Inter;
+    background-color: #3D5A80;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.mainDiv {
+    max-width: border-box;
+    margin: 0 auto;
+    background: #3D5A80;
+    display: flex;
+    justify-content: center;
+}
+.student-box {
+    padding: 10px;
+    padding-top: calc(5px + 2px);
+    margin: 10px 0;
+    border: 1px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #3D5A80 29px, #D9D9D9 0);
+    padding-left: 40px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+}
+
+
+.intermediateDiv {
+    width: 30%;
+    background: #EAEAEA;
+    margin-top: 20px;
+    padding : 20px;
+    border-radius: 20px;
+}
+
+.scrollableDiv {
+    height: calc(100vh - 100px);
+    overflow-y: auto;
+    padding-right: 20px;
+}
+
+.navigation {
+    font-family: Inter;
+    background-color: #D9D9D9;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+}
+
+.navigation a {
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    padding: 25px;
+    color: #293241;
+    font-size: 30px;
+}
+
+.navigation a.active {
+    background: #293241;
+    color: white;
+}
+
+.option {
+    font-size: 20px;
+}
+
+.selectstyle {
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #fffdfd;
+    border-radius: 5px;
+    background: white;
+}
+
+
+.add-student-form {
+    padding: 40px;
+    color: black;
+    background: linear-gradient(to right, #3D5A80 29px, #EAEAEA 0);
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    margin: auto;
+}
+
+label {
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+input {
+    padding: 4px;
+    margin-bottom: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+button {
+    padding: 10px;
+    background-color: #293241;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: auto;
+}
+
+.buttonModify{
+    padding: 10px;
+    position: center;
+    background-color: #293241;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: auto;
+}
+
+button:hover {
+    background-color: rgba(33, 39, 52, 0.91);
+}

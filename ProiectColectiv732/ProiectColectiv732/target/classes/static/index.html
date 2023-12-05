@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Studenti</title>
+    <script src="https://unpkg.com/htmx.org@1.7.0/dist/htmx.js"></script>
+</head>
+<body>
+<div class="mainDiv">
+    <div class="intermediateDiv">
+        <div class="scrollableDiv">
+            <div class="student-box" id="student1">
+                <p>Nume: John Doe</p>
+                <p>Prenume: Doe</p>
+                <p>CNP: 1234567890123</p>
+                <p>Data de nastere: 2000-01-01</p>
+                <p>Anul de studiu: 2</p>
+                <p>Nivelul de studiu: Licenta</p>
+                <p>Forma de finantare: Buget</p>
+                <p>Liceu absolvit: Nu</p>
+                <button class="buttonModify" onclick="editStudent('student1')">Modifica student</button>
+            </div>
+        </div>
+        <button class="addStudentButton" onclick="addStudentForm()">Adaugare student</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

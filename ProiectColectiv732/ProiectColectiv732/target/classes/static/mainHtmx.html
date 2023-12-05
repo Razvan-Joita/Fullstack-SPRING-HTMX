@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestionare Studenti</title>
+    <script src="https://unpkg.com/htmx.org@1.7.0/dist/htmx.js"></script>
+</head>
+<body>
+<div class="add-student-form">
+    <a href="index.html">
+        <img src="../resources/homeIcon.png"
+             style="width: 25px; height: 25px; margin-right: 5px;">
+    </a>
+    <h2 style='text-align: center; font-size: 30px; color: #3D5A80; font-weight: lighter; font-family: Inter'>Adaugare Student</h2>
+    <form onsubmit="saveStudent(this); return false;">
+        <label>Nume:</label>
+        <input type="text" name="name" required>
+        <label>Prenume:</label>
+        <input type="text" name="firstname" required>
+        <label>CNP:</label>
+        <input type="text" minlength="13" maxlength="13" onkeypress='return event.charCode >= 48 && event.charCode <= 57' required/>
+        <label>Dată Naștere:</label>
+        <input type="date" name="birthdate" required>
+        <label>An Studiu</label>
+        <select required class="selectstyle">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+        <label>Nivel studiu</label>
+        <select required class="selectstyle">
+            <option value="Licenta">Licenta</option>
+            <option value="Master">Master</option>
+        </select>
+        <label>Formă finanțare</label>
+        <select required class="selectstyle">
+            <option value="Buget">Buget</option>
+            <option value="Taxa">Taxă</option>
+        </select>
+        <input type="radio" id="raspuns_pozitiv" value="da">
+        <label for="raspuns_pozitiv">Da</label>
+        <input type="radio" id="raspuns_negativ" value="nu">
+        <label for="raspuns_negativ">Nu</label>
+        <input type="hidden" name="studentId">
+        <button type="submit">Salvare</button>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
